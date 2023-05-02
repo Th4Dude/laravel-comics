@@ -1,17 +1,20 @@
-
 <header>
-    <div class="container">
-        <div class="logo ">
+    <section class="main_box">
+        <div class="container_logo_list">
+            <!-- logo -->
             <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="" srcset="">
+            <!-- logo -->
+            <!-- navbar -->
+            <div class="container_list">
+                <nav>
+                    <ul class="list-unstyled d-flex justify-content-center gap-4">
+                        @foreach ($links as $link)<li><strong><a href="#">{{ $link }}</a></strong></li>@endforeach
+                    </ul>
+                </nav>
+            </div>
+            <!-- navbar -->
         </div>
-        <div class="menu">
-            <nav>
-                <ul class="list-unstyled d-flex justify-content-center gap-4">
-                 <li><a href="">Home</a></li>
-                 <li><a href="">Prodotti</a></li>
-                 <li><a href="">News</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
+    </section>
+    
 </header>
+
