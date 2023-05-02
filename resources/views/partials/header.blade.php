@@ -8,7 +8,9 @@
             <div class="container_list">
                 <nav>
                     <ul class="list-unstyled d-flex justify-content-center gap-4">
-                        @foreach ($links as $link)<li><strong><a href="#">{{ $link }}</a></strong></li>@endforeach
+                        @foreach ($toLinks as $link)
+                        <li><strong><a href="#">{{ $link }}</a></strong></li>
+                        @endforeach
                     </ul>
                 </nav>
             </div>
