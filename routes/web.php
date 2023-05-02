@@ -15,6 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    $links = ['characters', 'comics', 'movies', 'tv', 'games', 'collectibles', 'videos', 'fans', 'news', 'shop'];
+    $toLinks = ['CHARACTERS', 'COMICS', 'MOVIES', 'TV', 'GAMES', 'COLLECTIBLES', 'VIDEOS', 'FANS', 'NEWS', 'SHOP'];
     return view('home', ['links' => $links]);
 });
