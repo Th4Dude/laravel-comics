@@ -3,13 +3,6 @@
 
 @section('page.main')
 
-
-    <!-- background-img -->
-
-    <div class="background"></div>
-    
-    <!-- background-img -->
-    
     <!-- section -->
 
     <section>
@@ -22,10 +15,12 @@
 
         <div class="locandine">
     
-            @foreach ($comics as $item)
+            @foreach ($comics as $index => $item)
             <div class="text-align">
-            <img class="img-locandina" src="{{ $item['thumb'] }}" alt="Immagine">
-            <h3>{{ $item['title'] }}</h3>
+                <a href="{{ url('/comic/'.$index)}}">
+                    <img class="img-locandina" src="{{ $item['thumb'] }}" alt="Immagine">
+                    <h3>{{ $item['title'] }}</h3>
+                </a>
             </div>
             @endforeach
     

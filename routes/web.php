@@ -22,4 +22,21 @@ Route::get('/', function () {
     ];
 
     return view('home', $data);
+})->name('home');
+
+
+
+
+
+
+Route::get('/comic/{index}', function ($index) {
+
+    $data = [
+        'toLinks' => ['CHARACTERS', 'COMICS', 'MOVIES', 'TV', 'GAMES', 'COLLECTIBLES', 'VIDEOS', 'FANS', 'NEWS', 'SHOP']
+    ];
+
+    $comics = config('comics');
+    $comic = $comics[$index];
+
+    return view('comic', ['comic' => $comic], $data);
 });

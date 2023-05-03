@@ -1,4 +1,5 @@
 <header>
+    
     <section class="main_box">
         <div class="container_logo_list">
             <!-- logo -->
@@ -15,8 +16,15 @@
                 </nav>
             </div>
             <!-- navbar -->
+            
         </div>
     </section>
+
+    <!-- background-img -->
+
+    <div class="background"></div>
     
+    <!-- background-img -->
+
 </header>
 
