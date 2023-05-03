@@ -24,7 +24,7 @@
     
             @foreach ($comics as $item)
             <div class="text-align">
-            <img src="{{ $item['thumb'] }}" alt="Immagine">
+            <img class="img-locandina" src="{{ $item['thumb'] }}" alt="Immagine">
             <h3>{{ $item['title'] }}</h3>
             </div>
             @endforeach
