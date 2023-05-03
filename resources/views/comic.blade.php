@@ -27,19 +27,25 @@
 
 <div class="d-flex justify-content-center main_container_info">
 
-    <div class="container-left px-3">
+    <div class="container-left px-3 py-4">
         <h1 class="py-2">TALENT</h1>
-        <h4 class="py-2">ART BY :</h4>
-        <h4 class="py-2">WRITTEN BY :</h4>
-       
-
+        <h6 class="py-2 text-info">ART BY :
+            @foreach ($comic['artists'] as $artist)
+            {{$artist}}
+            @endforeach
+        </h6>
+        <h6 class="py-2 text-info">WRITTEN BY :
+            @foreach ($comic['writers'] as $writer)
+            {{$writer}}
+            @endforeach
+        </h6>
     </div>
 
-    <div class="container-right px-3 ">
+    <div class="container-right px-3 py-4 ">
        <h1 class="py-2">SPECS</h1>
-       <h4 class="py-2">SERIES : {{$comic['type']}}</h4>
-       <h4 class="py-2">PRICE : {{$comic['price']}}</h4>
-       <h4 class="py-2">ON SALE DATE : {{$comic['sale_date']}}</h4>
+       <h6 class="py-2">SERIES : {{$comic['type']}}</h6>
+       <h6 class="py-2">PRICE : {{$comic['price']}}</h6>
+       <h6 class="py-2">ON SALE DATE : {{$comic['sale_date']}}</h6>
     </div>
 
 </div>
