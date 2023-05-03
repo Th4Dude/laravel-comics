@@ -16,7 +16,7 @@
 
         <div class="btn-top">
             <button>
-                <h3>CURRENT SERIES</h3>
+                <h3 class="font-size-20">CURRENT SERIES</h3>
             </button>
         </div>
 
@@ -34,7 +34,7 @@
         <div class="btn-bottom">
 
             <button>
-                <h4>LOAD MORE</h4>
+                <h3 class="font-size-20">LOAD MORE</h3>
             </button>
 
         </div>
